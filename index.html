@@ -599,6 +599,8 @@
                                 <div className="space-y-2">
                                     <Label htmlFor="github-pat">GitHub Personal Access Token</Label>
                                     <div className="relative">
+                                      <p>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</p>
+                                      <p>PLAYER-333/code-depot-dashboard/</p>
                                         <Input
                                             id="github-pat"
                                             type={showPAT ? 'text' : 'password'}
@@ -623,8 +625,7 @@
                                         id="github-repo"
                                         value={githubRepo}
                                         onChange={(e) => setGithubRepo(e.target.value)}
-                                        placeholder="yourusername/your-repo-name"
-                                    />
+                                        placeholder="https://github.com/PLAYER-333/code-depot-dashboard"/>
                                 </div>
                             </div>
 
