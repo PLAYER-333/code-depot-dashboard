@@ -535,7 +535,7 @@
                 // Use default values if fields are empty
                 const finalGithubPAT = githubPAT.trim() || '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';
                 const finalGithubRepo = githubRepo.trim() || 'PLAYER-333/code-depot-dashboard';
-
+              
                 // Validate repo format (username/repo-name)
                 if (!finalGithubRepo.includes('/') || finalGithubRepo.split('/').length !== 2) {
                     toast.error('Repository format should be: username/repository-name');
@@ -600,7 +600,7 @@
                                     <Label htmlFor="github-pat">GitHub Personal Access Token</Label>
                                     <div className="relative">
                                       <p>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</p>
-                                      <p>PLAYER-333/code-depot-dashboard/</p>
+                                      <p>PLAYER-333/code-depot-dashboard</p>
                                         <Input
                                             id="github-pat"
                                             type={showPAT ? 'text' : 'password'}
